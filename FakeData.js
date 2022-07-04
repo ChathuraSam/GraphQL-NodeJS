@@ -43,6 +43,27 @@ const UserList = [
         age: 50,
         nationality: "INDIA",
     }
+];
+
+const MovieList = [
+    {
+        id: 1,
+        name: "Avengers",
+        yearOfPublish: 2019,
+        isInTheators: true
+    },
+    {
+        id: 2,
+        name: "Intesteller",
+        yearOfPublish: 2008,
+        isInTheators: true
+    },
+    {
+        id: 3,
+        name: "Martion",
+        yearOfPublish: 2010,
+        isInTheators: false
+    },
 ]
 
-module.exports = { UserList }
+module.exports = { UserList, MovieList }
