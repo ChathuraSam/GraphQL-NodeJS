@@ -41,3 +41,27 @@ variable:
   "name": "Chathura"
 }
 ```
+
+### 3. Get all movies
+```
+query getAllMovies{
+  movies {
+    name
+    yearOfPublish
+    isInTheators
+  }
+}
+```
+### 4. Get movie by name
+```
+query getMovieById($name: String!){
+  movie(name: $name) {
+    name
+  }
+}
+
+variable:
+{
+  "name": "Martion"
+}
+```
