@@ -1,0 +1,25 @@
+{
+  "name": "graphql-nodejs",
+  "version": "1.0.0",
+  "description": "A GraphQL Learning NodeJS Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChathuraSam/GraphQL-NodeJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChathuraSam/GraphQL-NodeJS/issues"
+  },
+  "homepage": "https://github.com/ChathuraSam/GraphQL-NodeJS#readme",
+  "dependencies": {
+    "apollo-server": "^3.9.0",
+    "graphql": "^16.5.0"
+  }
+}
