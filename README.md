@@ -12,3 +12,32 @@ check the url accordingly
 
 ## Try writing some queries in the editor
 
+### 1. Get all users
+```
+query getAllusers {
+  users {
+    name
+    age
+    nationality
+    friends {
+      name
+    }
+  }
+}
+```
+
+### 2. Get all users
+```
+query getuserByName($name: String!) {
+  user(name: $name) {
+    name
+    age
+    nationality
+  }
+}
+
+variable:
+{
+  "name": "Chathura"
+}
+```
