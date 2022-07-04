@@ -6,7 +6,13 @@ const resolvers = {
         users: ()=>{
             return UserList;
         },
-    }
-}
+
+        user: (parent, args) => {
+            const name = args.name;
+            const user = _.find(UserList, { name: name });
+            return user;
+        },
+    },
+};
 
 module.exports = { resolvers }
