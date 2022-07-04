@@ -4,6 +4,20 @@ const UserList = [
         name: "John",
         age: 10,
         nationality: "CANADA",
+        friends: [
+            {
+                id: 2,
+                name: "Cena",
+                age: 20,
+                nationality: "CANADA",
+            },
+            {
+                id: 5,
+                name: "Dimuth",
+                age: 50,
+                nationality: "INDIA",
+            }
+        ]
     },
     {
         id: 2,
