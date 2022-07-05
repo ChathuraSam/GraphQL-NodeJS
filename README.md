@@ -86,3 +86,23 @@ variable:
   }
 }
 ```
+
+### 6. Update User's name
+```
+mutation UpdateUserName($input: UpdateNameInput!) {
+  updateusername(input: $input) {
+    id
+    name
+    age
+    nationality
+  }
+}
+
+variable:
+{
+  "input": {
+    "id": "1",
+    "newName":"Johnyy"
+  }
+}
+```
