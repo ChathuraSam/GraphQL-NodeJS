@@ -25,8 +25,16 @@ const resolvers = {
             const movie = _.find(MovieList, { name: name });
             return movie;
         }
-
     },
+
+    // in real scenario, create a seperate table for store the fav movies
+    User: {
+        favouriteMovies: () => {
+            return _.filter(MovieList, (movie)=> 
+                movie.yearOfPublish > 2009
+            );
+        }
+    }
 };
 
 module.exports = { resolvers }
