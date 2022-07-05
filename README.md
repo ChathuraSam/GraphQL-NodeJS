@@ -106,3 +106,17 @@ variable:
   }
 }
 ```
+
+### 7.  Delete user
+```
+mutation DeleteUser($deleteUserId: ID!){
+  deleteUser(id: $deleteUserId) {
+    id
+  }
+}
+
+variable:
+{
+  "deleteUserId": "1"
+}
+```
