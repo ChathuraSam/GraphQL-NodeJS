@@ -34,6 +34,17 @@ const resolvers = {
                 movie.yearOfPublish > 2009
             );
         }
+    },
+
+    Mutation: {
+        createUser: (parent, args) =>{
+            const user = args.input
+            // console.log the data or add the data to a db
+            const lastId = UserList[UserList.length-1].id
+            user.id = lastId + 1
+            UserList.push(user)
+            return user
+        }
     }
 };
 

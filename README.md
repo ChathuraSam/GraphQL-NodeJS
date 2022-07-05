@@ -65,3 +65,24 @@ variable:
   "name": "Martion"
 }
 ```
+
+### 4. Create User
+```
+mutation createUser($input: CreateUserInput!) {
+  createUser(input: $input) {
+    id
+    name
+    nationality
+  }
+}
+
+variable:
+{
+  "input": {
+    "username": "mad",
+    "name": "Madawa",
+    "age": 45,
+    "nationality": "CANADA"
+  }
+}
+```
