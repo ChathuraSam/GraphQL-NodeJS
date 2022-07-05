@@ -66,7 +66,7 @@ variable:
 }
 ```
 
-### 4. Create User
+### 5. Create User
 ```
 mutation createUser($input: CreateUserInput!) {
   createUser(input: $input) {
